@@ -1,0 +1,17 @@
+@import "variables";
+@mixin font($fontS: 10px, $fontW: 400, $fontN: $mainFonts) {
+    font-size: $fontS;
+    font-weight: $fontW;
+    font-family: $fontN;
+}
+
+@mixin psevdobtn {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(https://image.flaticon.com/icons/svg/149/149690.svg);
+    background-size: contain;
+    position: absolute;
+    top: 27px;
+    border-radius: 50%;
+}

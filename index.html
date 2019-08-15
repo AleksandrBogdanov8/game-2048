@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>2048</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="maingame">
+        <div class="playingfield">
+            <div class="play sizes ">
+                <div class="size active" data-size="5">5 x 5</div>
+                <div class="size" data-size="6">6 x 6</div>
+                <div class="size" data-size="7">7 x 7</div>
+                <div class="size" data-size="8">8 x 8</div>
+                <div class="startgame">Start</div>
+            </div>
+            <div class="play game hidden"></div>
+
+
+        </div>
+
+        <div class="sidefield">
+            <div class="labels">
+                <div class="label">record</div>
+                <div class="records">0</div>
+            </div>
+            <div class="labels">
+                <div class="label">score</div>
+                <div class="score">0</div>
+            </div>
+            <div class="btn backbutton"></div>
+            <div class="btn startagain"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

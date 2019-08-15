@@ -1,0 +1,200 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Libre Baskerville", serif;
+  min-width: 800px;
+}
+
+body {
+  background: url(../img/BGtexture.jpg);
+  cursor: default;
+}
+
+.maingame {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.playingfield {
+  width: 60%;
+  text-align: center;
+}
+
+.play {
+  width: 500px;
+  height: 500px;
+  margin: 70px auto;
+  border: 10px solid #401705;
+}
+
+.game {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+  background: #606060;
+}
+
+.sizes {
+  font-size: 3.6rem;
+  font-weight: bold;
+  font-family: "Libre Baskerville", serif;
+}
+
+.sizes > * {
+  border: 1px solid #000;
+  border-radius: 30px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.size {
+  background: #939393;
+  display: inline-block;
+  width: 35%;
+  margin: 70px 20px 0px 20px;
+  padding: 5px;
+}
+
+.active {
+  color: #00f;
+}
+
+.startgame {
+  display: inline-block;
+  background: #939393;
+  padding: 10px 55px;
+  margin: 80px 60px 40px;
+  position: relative;
+}
+
+.startgame::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(https://image.flaticon.com/icons/svg/149/149690.svg);
+  background-size: contain;
+  position: absolute;
+  top: 27px;
+  border-radius: 50%;
+  right: 20px;
+}
+
+.startgame::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(https://image.flaticon.com/icons/svg/149/149690.svg);
+  background-size: contain;
+  position: absolute;
+  top: 27px;
+  border-radius: 50%;
+  left: 20px;
+}
+
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+.game .itemgame {
+  border: 1px solid #000;
+  background: #606060;
+}
+
+.statusgame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 480px;
+  text-transform: uppercase;
+  padding-top: 200px;
+  background: rgba(10, 10, 10, 0.7);
+  color: #ff5100;
+  font-size: 4.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.sidefield {
+  width: 40%;
+  text-align: center;
+  padding-top: 70px;
+  padding-right: 50px;
+}
+
+.sidefield .labels {
+  margin: 10px auto 50px;
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-family: "Lobster", cursive;
+  text-transform: uppercase;
+}
+
+.sidefield .btn {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  margin: 40px;
+  border-radius: 50%;
+  background-size: contain;
+  background-color: #606060;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.sidefield .backbutton {
+  background-image: url(https://www.flaticon.com/premium-icon/icons/svg/2028/2028261.svg);
+  background-size: cover;
+  padding: 15px;
+}
+
+.sidefield .startagain {
+  background-image: url(https://image.flaticon.com/icons/svg/1038/1038067.svg);
+}
+
+@media (max-width: 870px) {
+  .sidefield .btn {
+    margin: 40px 20px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .maingame {
+    padding-left: calc(50vw - 625px);
+    padding-right: calc(50vw - 625px);
+  }
+}
+
+.active {
+  color: #00f;
+}

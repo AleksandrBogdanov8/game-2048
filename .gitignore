@@ -1,0 +1,5 @@
+#all .txt
+*.txt
+
+#all .config
+*.config
