@@ -17,10 +17,11 @@ var recordval;
 // проверяем и если есть подгружаем, а если нет создаем локалсторадже
 if (!localStorage.getItem(localName)) {
     localStorage.setItem(localName, score.textContent);
-} else {
-    recordval = +localStorage.getItem(localName);
-    records.innerText = recordval;
 }
+
+recordval = +localStorage.getItem(localName);
+records.innerText = recordval;
+
 
 // выбираем размер игрового поля и запускаем игру
 sizes.addEventListener('click', function(event) {
