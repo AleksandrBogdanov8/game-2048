@@ -14,7 +14,7 @@ var startagain = document.querySelector('.startagain');
 var recordval;
 
 
-// проверяем и если есть подгружаем, а если нет создаем локалсторадже
+// проверяем  ли у нас локалсторадже, если нет, создаем его. 
 if (!localStorage.getItem(localName)) {
     localStorage.setItem(localName, score.textContent);
 }
