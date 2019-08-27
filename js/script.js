@@ -14,7 +14,7 @@ var startagain = document.querySelector('.startagain');
 var recordval;
 
 
-// проверяем  ли у нас локалсторадже, если нет, создаем его. 
+// проверяем есть ли у нас локалсторадже, если нет, создаем его. 
 if (!localStorage.getItem(localName)) {
     localStorage.setItem(localName, score.textContent);
 }
@@ -163,7 +163,7 @@ game.onmouseup = function() {
 
 // Смещаем все ячейки со значением в заданом направлении и добавляем одно новое в произвольном месте
 function moveitem(direction) {
-
+    // смещение на лево
     if (direction == 1) {
         for (var iter1 = 0; iter1 < size - 1; iter1++) {
             for (var j = 0; j < itemgames.length; j++) {
@@ -183,6 +183,7 @@ function moveitem(direction) {
 
             }
         }
+        // смещение на право
     } else if (direction == -1) {
         for (var iter2 = 0; iter2 < size - 1; iter2++) {
             for (var j2 = itemgames.length - 1; j2 >= 0; j2--) {
@@ -199,7 +200,7 @@ function moveitem(direction) {
             }
 
         }
-
+        // смещение вверх
     } else if (direction == size) {
         for (var iter3 = 0; iter3 < size - 1; iter3++) {
             for (var j3 = size; j3 < itemgames.length; j3++) {
@@ -214,7 +215,7 @@ function moveitem(direction) {
 
             }
         }
-
+        // смещение вниз
     } else if (direction == -size) {
         for (var iter4 = 0; iter4 < size - 1; iter4++) {
             for (var j4 = itemgames.length - size - 1; j4 >= 0; j4--) {
